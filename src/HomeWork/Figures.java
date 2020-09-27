@@ -11,8 +11,8 @@ public class Figures {
         double b = sc.nextDouble();
         System.out.println("Enter radius");
         double r = sc.nextDouble();
-        double t = Math.sqrt(a*a + b*b)/2;
-        if (t<=r) {
+        double t = Math.sqrt(a * a + b * b) / 2;
+        if (t <= r) {
             System.out.println("the circle cover the  hole");
         } else System.out.println("the circle doesnt cover the hole");
 

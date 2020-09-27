@@ -21,22 +21,22 @@ public class Vector {
         double max = min;
         int indMin = 0;
         int indMax = 0;
-        for (int x = 0; x < vec.length;x++){
-            if (vec[x] < 0){
-                sum  += vec[x];
+        for (int x = 0; x < vec.length; x++) {
+            if (vec[x] < 0) {
+                sum += vec[x];
             }
-            if (vec[x]< min){
+            if (vec[x] < min) {
                 min = vec[x];
                 indMin = x;
             }
-            if (vec[x] > max){
+            if (vec[x] > max) {
                 max = vec[x];
                 indMax = x;
             }
 
 
         }
-        for (int y = (indMin + 1); y != indMax; y++){
+        for (int y = (indMin + 1); y != indMax; y++) {
             prod *= vec[y];
         }
         System.out.println("sum is");

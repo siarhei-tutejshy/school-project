@@ -3,9 +3,9 @@ package HomeWork;
 
 public class Days {
     public static void main(String[] args) {
-        int n =(int) (Math.random()*10);
+        int n = (int) (Math.random() * 10);
 
-        switch (n){
+        switch (n) {
             case 1:
                 System.out.println("Monday");
                 break;
