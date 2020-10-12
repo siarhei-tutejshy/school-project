@@ -26,20 +26,24 @@ public class Computer {
     public void print() {
         System.out.println(toString());
     }
-
+    Random random = new Random();
+    int z = random.nextInt(2);
     public void on(int x) {
-        Random random = new Random();
-        int z = random.nextInt(2);
+
         if (z == x) {
             System.out.println(" Computer is turn on");
-        } else System.out.println("Fail. Computer was burn");
-        System.out.println("Computer cant be turned on");
+        } else {
+            System.out.println("Fail. Computer was burn");
+            System.out.println("Computer cant be turned on");
+        }
     }
-
-    public void off() {
-        System.out.println("Computer is turn off");
+    public void off(int x) {
+        if (z == x) {
+            System.out.println("Computer is turn off");
+        } else {
+            System.out.println("Fail. Computer was burn, cant be turned off");
+        }
     }
-
     public static void main(String[] args) {
         System.out.println("Enter 1 or  0");
         Scanner sc = new Scanner(System.in);
@@ -47,6 +51,6 @@ public class Computer {
         Computer comp = new Computer("AMD", 8, 312);
         comp.print();
         comp.on(x);
-        comp.off();
+        comp.off(x);
     }
 }

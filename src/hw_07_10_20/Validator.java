@@ -15,7 +15,6 @@ public class Validator {
             private String type;
             private int yearOfCard;
 
-
             public Card() {
                 this.numberOfCard = number;
                 this.owner = ownerName;
@@ -25,21 +24,31 @@ public class Validator {
             }
 
             public void validate() {
-                if (numberOfCard.length() == 16) {
+                if (numberOfCard.length() == 16 && numberOfCard.matches("[0-9]+") == true) {
                     System.out.println("Number is correct");
-                } else System.out.println("number is incorrect");
-                if (owner == null) {
+                } else {
+                    System.out.println("number is incorrect");
+                }
+                if (owner.isEmpty()) {
                     System.out.println("No owner");
-                } else System.out.println("Owner is correct");
-                if (cVV.length() == 3) {
+                } else {
+                    System.out.println("Owner is correct");
+                }
+                if (cVV.length() == 3 && cVV.matches("[0-9]+")== true) {
                     System.out.println("cvv is correct");
-                } else System.out.println("cvv is incorrect");
+                } else {
+                    System.out.println("cvv is incorrect");
+                }
                 if (type.equals("mastercard") || type.equals("visa")) {
                     System.out.println("correct type");
-                } else System.out.println("incorrect type");
+                } else {
+                    System.out.println("incorrect type");
+                }
                 if (cardExpiry <= year) {
                     System.out.println("correct expiry");
-                } else System.out.println("incorrect expiry");
+                } else {
+                    System.out.println("incorrect expiry");
+                }
             }
 
         }
