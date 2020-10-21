@@ -5,11 +5,11 @@ public abstract class Animals {
     protected String family;
     protected String species;
 
-    protected int SpeedOfRunning(int speed) {
+    protected int speedOfRunning(int speed) {
         System.out.println("Speed of running is " + speed);
         return speed;
     }
 
-    abstract void eatOrEaten();
+    abstract void  voice();;
 
 }

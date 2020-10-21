@@ -28,7 +28,7 @@ public class Dog extends Animals implements Voice {
     }
 
     @Override
-    void eatOrEaten() {
+    public void eatOrEaten() {
         System.out.println("Dog can eat smt");
     }
 }

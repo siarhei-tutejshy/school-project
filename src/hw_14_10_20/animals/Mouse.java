@@ -28,7 +28,7 @@ public class Mouse extends Animals implements Voice {
     }
 
     @Override
-    void eatOrEaten() {
+   public void eatOrEaten() {
         System.out.println("Mouse can be eaten");
     }
 }
