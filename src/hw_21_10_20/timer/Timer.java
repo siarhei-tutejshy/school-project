@@ -7,7 +7,7 @@ public class Timer {
         this.timeHandler = timeHandler;
     }
 
-    public void period() {
+    public void period() throws InterruptedException {
         timeHandler.execute();
     }
 }

@@ -6,7 +6,7 @@ public class TypeArray {
     public static <T> void el(String s, T[] array, int x) {
 
         T[] t = array;
-        ArrayValues<T> el = new ArrayValues<T>();
+        ArrayValues<T> el = new ArrayValues<>();
         el.setArray(t);
         System.out.print(s + "index " + x + "is ");
         System.out.print(el.getArrayIndex(x));
