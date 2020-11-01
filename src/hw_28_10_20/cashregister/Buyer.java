@@ -6,16 +6,16 @@ import java.util.Map;
 
 
 public class Buyer {
-    private ArrayList<String> ar;
+    private ArrayList<String> arrayOfProducts;
     public Buyer(ArrayList<String> ar) {
-        this.ar = ar;
+        this.arrayOfProducts = ar;
     }
 
     public double cash(Map<String, Double> map) {
 
         double x = 0;
         for (Map.Entry<String, Double> i : map.entrySet()) {
-            for (String s : ar) {
+            for (String s : arrayOfProducts) {
                 if (s == i.getKey()) {
                     System.out.println(i.getKey() + " cost " + i.getValue() + " pounds");
                     x += i.getValue();

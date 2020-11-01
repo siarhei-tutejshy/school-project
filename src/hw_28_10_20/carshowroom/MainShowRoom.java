@@ -18,6 +18,7 @@ public class MainShowRoom {
         int year;
         double engine;
         int coast;
+
         for (; ; ) {
             do {
                 System.out.println(" 1. Add your Car;");
@@ -94,7 +95,6 @@ public class MainShowRoom {
                 default:
                     new WrongSelectNumberException("You select wrong number");
             }
-
 
         }
     }
