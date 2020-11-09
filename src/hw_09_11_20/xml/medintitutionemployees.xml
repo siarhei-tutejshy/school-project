@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<company>
+    <name>Psychiatric Dispensary</name>
+    <department>
+        <employee name="Nikita" surname="Tihonov" departmentposition="Psychiatrists" expirience=" 5 years"
+                  departmentname="Outpatient Psychiatric"/>
+        <employee name="Hanna" surname="Lykashevich" departmentposition="Head of department" expirience="20 years"
+                  departmentname="Outpatient Psychiatric"/>
+        <employee name="Tamara" surname="Lihacheva" departmentposition="Head nurse" expirience="15 years"
+                  departmentname="Outpatient Psychiatric"/>
+    </department>
+    <department>
+        <employee name="Eduard" surname="Petrov" departmentposition="Psychotherapists" expirience="10 years"
+                  departmentname="Outpatient Psychotherapist"/>
+        <employee name="Anna" surname="Pashnik" departmentposition="Head of Department" expirience="7 years"
+                  departmentname="Outpatient Psychotherapist"/>
+        <employee name="Tatsyana" surname="Berdnikova" departmentposition="Head nurse" expirience="15 years"
+                  departmentname="Outpatient Psychotherapist"/>
+    </department>
+    <department>
+        <employee name="Evgeni" surname="Sorokin" departmentposition="Psychiatrists" expirience="25 years"
+                  departmentname="Inpatient Psychiatric"/>
+        <employee name=" Nina" surname="Stanishevskaya" departmentposition="Head of department"
+                  expirience="18 years" departmentname="Inpatient Psychiatric"/>
+
+        <employee name="Ekaterina" surname="Volkova" departmentposition="Head nurse" expirience="10 years"
+                  departmentname="Inpatient Psychiatric"/>
+
+    </department>
+</company>
